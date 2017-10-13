@@ -31,7 +31,7 @@ namespace concanatedWords
                 string prefix = word.Substring(0, i+1);                
                 if (trie.Search(prefix))
                 {
-                    string suffix = word.Substring(i);
+                    string suffix = word.Substring(i+1);
                     if (trie.Search(suffix))
                     {
                         concateWords.Add(originalWord);
